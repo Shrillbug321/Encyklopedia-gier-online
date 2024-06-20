@@ -1,6 +1,7 @@
 <?php
-	session_start();
-	require_once ("../databaseconnection.php");
+    global $connection;
+    session_start();
+	require_once("../databaseConnection.php");
 	$sql = 'SELECT id, user, password, avatar, background FROM users';
 	$result = $connection -> query($sql);
 	while ($row = $result -> fetch_assoc())
@@ -13,17 +14,15 @@
 			$_SESSION['background'] = $row['background'];
 			$sql = 'SELECT idUser FROM admins WHERE idUser='.$_SESSION['idUser'];
 			$admin = $connection -> query($sql)-> fetch_assoc();
-			if (isset($admin))
-			{
+
+            if (isset($admin))
 				$_SESSION['admin'] = 1;
-			}
-			if( isset($_SESSION['wrong']) )
-			{
-				unset($_SESSION['wrong']);
-			}
+			if (isset($_SESSION['wrongLoginAttempt']))
+				unset($_SESSION['wrongLoginAttempt']);
 		}
 	}
 	if (!isset($_SESSION['user']))
-		$_SESSION['wrong'] = 1;
+		$_SESSION['wrongLoginAttempt'] = 1;
+
 	header('Location: '.$_SERVER['HTTP_REFERER']);
 ?>

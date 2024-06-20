@@ -1,4 +1,4 @@
-﻿/*Twórca Sebastian Dreszer*/
+﻿/*Creator Sebastian Dreszer*/
 @font-face
 {
 	font-family: Play;
@@ -32,7 +32,7 @@
 html
 {
 	background-color: var(--background-color);
-	font-family: Catamaran;
+	font-family: Catamaran, sans-serif;
 }
 
 body
@@ -78,7 +78,7 @@ header
 
 .logo > h1 > a
 {
-	font-family: Play;
+	font-family: Play, sans-serif;
 	text-decoration: none;
 	color: var(--primary-color);
 }
@@ -144,12 +144,12 @@ select
 	height: 30px;
 }
 
-/*logowanie/konto*/
+/*login/account*/
 .account
 {
 	position: absolute;
 	right: 9.8%;
-	top: 62px;
+	top: 3.1rem;
 	padding-bottom: 10px;
 	width: 11%;
 	height: 45px;
@@ -255,7 +255,7 @@ select
 #adminPanel > a
 {
 	margin: 10px;
-	margin-right: 20px;	
+	margin-right: 20px;
 }
 
 #profile
@@ -272,7 +272,7 @@ select
 	margin-top: -20px;
 }
 
-/*nawigacja*/
+/*navigation*/
 #links
 {
 	position: sticky;
@@ -410,11 +410,11 @@ select
 	height: 44px;
 	padding: 12px 20px;
 	background-image: linear-gradient(0deg, rgba(250, 219, 20, 1) 0%, rgba(255, 240, 26, 1) 100%);
-	font-family: Segoe UI;
+	font-family: Segoe UI, sans-serif;
 	font-size: 16px;
 }
 
-/*profil*/
+/*profile*/
 #avatar
 {
 	height: 100px;
@@ -462,12 +462,12 @@ select
 	width: 40%;
 }
 
-#areYouSure
+#confirmAccountDelete
 {
 	display: none;
 }
 
-/*gra*/
+/*game*/
 #game
 {
 	float: left;
@@ -564,7 +564,7 @@ select
 	font-size: 18px;
 }
 
-/*gra - galeria*/
+/*game - gallery*/
 #buttons
 {
 	display: flex;
@@ -597,7 +597,7 @@ select
 	cursor: pointer;
 }
 
-/*filmy*/
+/*movies*/
 #movies
 {
 	width: 100%;
@@ -613,7 +613,7 @@ iframe
 	border: 3px solid var(--primary-color);
 }
 
-/*dodanie gry*/
+/*game add*/
 #editGameForm > label
 {
 	font-family: var(--header-font);
@@ -648,7 +648,7 @@ iframe
 	color: var(--primary-color);
 }
 
-/*wiadomości*/
+/*news*/
 .smallCover
 {
 	clip-path: inset(10px 0px 20px 0px);

@@ -1,15 +1,15 @@
-//Twórca Sebastian Dreszer
+//Creator Sebastian Dreszer
 $(document).ready(function()
 {
-	//szukanie
+	//searching
 	$("#lupa").click(function()
 	{
-		$("#content").load("search-result.php", {search: $("#search").val()});
+		$("#content").load("searchResult.php", {search: $("#search").val()});
 	})
-	//obsługa konta
+	//account manage
 	$("#loginBtn").click(function()
 	{
-		$("#login").load("loginform.php");
+		$("#login").load("loginForm.php");
 	})
 	
 	$("#loginForm").find("input").click(function()
@@ -19,17 +19,17 @@ $(document).ready(function()
 	
 	$("#newAccount").click(function()
 	{
-		window.location.href = "newaccount.php";
+		window.location.href = "newAccount.php";
 	})
 	
 	$("#delete").click(function()
 	{
-		$("#areYouSure").css( { display: "block"} );
+		$("#confirmAccountDelete").css( { display: "block"} );
 	})
 	
 	$("#no").click(function()
 	{
-		$("#areYouSure").css( { display: "none"} );
+		$("#confirmAccountDelete").css( { display: "none"} );
 	})
 	
 	$("#wrongLogin").find("button").click(function()
@@ -39,31 +39,31 @@ $(document).ready(function()
 	
 	$("#profileBtn").click(function()
 	{
-		$("#login").load("profiletile.php");
+		$("#login").load("profileTile.php");
 	})
 	
-	//ustawienia konta
+	//account settings
 	$("#changeName").click(function()
 	{
-		$("#settings").load("profile/changenameform.php");
+		$("#settings").load("profile/changeNameForm.php");
 	})
 	
 	$("#changePassword").click(function()
 	{
-		$("#settings").load("profile/changepasswordform.php");
+		$("#settings").load("profile/changePasswordForm.php");
 	})
 	
 	$("#changeAvatar").click(function()
 	{
-		$("#settings").load("profile/changeavatarform.php");
+		$("#settings").load("profile/changeAvatarForm.php");
 	})
 	
 	$("#changeBackground").click(function()
 	{
-		$("#settings").load("profile/changebackgroundform.php");
+		$("#settings").load("profile/changeBackgroundForm.php");
 	})
 	
-	//dodawanie
+	//adding
 	$("select[name=\"category\"]").change(function()
 	{
 		$("#subcategorySel").load("game/subcategory.php", {idCategory: $(this).val()} );
@@ -72,15 +72,15 @@ $(document).ready(function()
 	
 	$("#howManyButton").click(function()
 	{
-		$("#content").load("load-image-form.php", {howMany: $("#howManyImages").val(), idgame: $("#idgame").val() } );
+		$("#content").load("loadImageForm.php", {howMany: $("#howManyImages").val(), idGame: $("#idgame").val() } );
 	})
 	
 	$("#howManyMoviesButton").click(function()
 	{
-		$("#content").load("load-movie-form.php", {howMany: $("#howManyMovies").val(), idgame: $("#idgame").val() } );
+		$("#content").load("loadMovieForm.php", {howMany: $("#howManyMovies").val(), idGame: $("#idgame").val() } );
 	})
 })
-	//galeria
+	//gallery
 	function prev(directory)
 	{
 		var image = document.getElementById("imageBig");
