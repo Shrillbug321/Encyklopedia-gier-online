@@ -1,37 +1,40 @@
 # Encyklopedia-gier-online
 ## PL
+**Technologie**
+JavaScript + jQuery, PHP 5.6 i MySQL (MariaDB).<br>
 Strona internetowa dotycząca gier online. Zawiera m.in. CRUD gier i aktualności, tworzenie konta.<br>
-W grach oprócz informacji tekstowych, takich jak tytuł czy opis, można dodać multimedia czyli galerię obrazów oraz filmy.<br>
+W grach oprócz informacji tekstowych, takich jak tytuł czy opis, można dodać multimedia, czyli galerię obrazów oraz filmy.<br>
+Formularz wiadomości jest prosty i zawiera pola tytułu, opisu, grafiki otwierającej oraz jakiej gry dotyczy.
 Istnieją dwa typy kont: użytkownik zwykły oraz administrator.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Niezarejestrowany użytkownik może przeglądać gry i aktualności.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Zwykły uzyskuje możliwość personalizacji witryny tzn. swojego awataru oraz tła strony.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Administrator oprócz tego może dodawać, edytować oraz usuwać gry i aktualności.<br>
+* Niezarejestrowany użytkownik może przeglądać gry i aktualności.<br>
+* Zwykły uzyskuje możliwość personalizacji witryny tzn. swojego awatara oraz tła strony.<br>
+* Administrator oprócz tego może dodawać, edytować oraz usuwać gry i aktualności.<br>
 
-**Technologie** JavaScript + jQuery, PHP 5.6 i MySQL (MariaDB).<br>
 **Uruchomienie**
 1. Pobieramy, instalujemy i uruchamiamy pakiet XAMPP
 2. W XAMPP uruchamiamy serwery Apache oraz MySQL
 3. Importujemy bazę z pliku onlineGamesEncyclopaedia.sql<br>
-3.1. Klikamy przycik Admin w wierszu MySQL. Otworzy się phpMyAdmin<br>
+3.1. Klikamy przycisk Admin w wierszu MySQL. Otworzy się phpMyAdmin<br>
 3.2. W nim z górnej belki naciskamy import<br>
 3.3. W oknie importu wskazujemy plik i naciskamy import
-4. Umieszczamy pliki projektu do folderu htdocs (znajduje się w lokalizacji instalacji XAMPPa)
+4. Umieszczamy pliki projektu do folderu htdocs (znajduje się w lokalizacji instalacji XAMPP-a)
 5. Witryna dostępna jest pod https://localhost/<nazwa-folderu>/sites/index.php <br>
-(po pobraniu z GitHuba domyślna nazwa-folderu to Encyklopedia-gier-online-main)<br>
+(po pobraniu z GitHuba domyślna nazwa-folderu to Encyklopedia-gier-online-main) <br>
 
 Czerwiec 2020
 
 **Obrazki pod angielskim opisem**
 
 ## EN
+**Technologies**
+JavaScript + jQuery, PHP 5.6 and MySQL (MariaDB).<br>
 Website about online games. Contains including CRUD for games and news, account creating.<br>
-Games except text informations, such as title or description, you can add multimedia that is images gallery and videos.<br>
+Games except text information, such as title or description, you can add multimedia that is images gallery and videos.<br>
 Exists two types of accounts: regular user and admin.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Non registered user can preview games and news.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Regular user can personalise website thats means avatar and background.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;Admin except this can add, edit and delete games and news.<br>
+* Non-registered user can preview games and news.<br>
+* Regular user can personalize website that is means avatar and background.<br>
+* Admin except this can add, edit and delete games and news.<br>
 
-**Technologies** JavaScript + jQuery, PHP 5.6 and MySQL (MariaDB).<br>
 **Launching**
 1. Download, install and run XAMPP package
 2. In XAMPP run Apache and MySQL servers
@@ -51,3 +54,9 @@ Strona profilu/Profile site
 ![img.png](readme/profile.png)
 Strona gry/Game site
 ![img_1.png](readme/game.png)
+Edycja gry/Game edit
+![img.png](img.png)
+Galeria/Gallery
+![img_1.png](img_1.png)
+Filmy/Videos
+![img_2.png](img_2.png)
